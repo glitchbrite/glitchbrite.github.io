@@ -71,6 +71,10 @@ function draw() {
 
   var v = createVector(x, y)
   grid.push(v)
+
+  if(grid.length >= 100){
+    grid.shift()
+  }
   
   fill(r,g,b,168)
   // noFill()

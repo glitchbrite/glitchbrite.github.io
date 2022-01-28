@@ -1,10 +1,14 @@
+function windowResized() {
+  resizeCanvas(windowWidth-(windowWidth*0.05), windowHeight-(windowHeight*0.2));
+  background(0)
 
+}
 function setup() {
 
   document.body.style.backgroundColor = "rgb(57, 57, 57)";
   // document.body.style.marginTop = "10px";
 
-  createCanvas(1880, 1040, WEBGL)
+  createCanvas(windowWidth-(windowWidth*0.05), windowHeight-(windowHeight*0.2), WEBGL)
   background(0)
   noFill()
   stroke(255)
@@ -71,10 +75,6 @@ function draw() {
 
   var v = createVector(x, y)
   grid.push(v)
-
-  if(grid.length >= 100){
-    grid.shift()
-  }
   
   fill(r,g,b,168)
   // noFill()

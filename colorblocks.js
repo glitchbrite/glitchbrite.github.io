@@ -1,14 +1,13 @@
 function windowResized() {
-  resizeCanvas(windowWidth-(windowWidth*0.05), windowHeight-(windowHeight*0.2));
+  resizeCanvas(windowWidth-(windowWidth*0.04), windowHeight-(windowHeight*0.2));
   background(0)
 
 }
 function setup() {
 
   document.body.style.backgroundColor = "rgb(57, 57, 57)";
-  // document.body.style.marginTop = "10px";
 
-  createCanvas(windowWidth-(windowWidth*0.05), windowHeight-(windowHeight*0.2), WEBGL)
+  createCanvas(windowWidth-(windowWidth*0.04), windowHeight-(windowHeight*0.02), WEBGL)
   background(0)
   noFill()
   stroke(255)
@@ -114,22 +113,22 @@ function draw() {
 
 
 
-var onoff = 1
+// var onoff = 1
 
-function mouseClicked(){
+// function mouseClicked(){
 
-  if(onoff === 1){
+//   if(onoff === 1){
 
-    noLoop()
-    onoff = 0
+//     noLoop()
+//     onoff = 0
 
-  } else {
+//   } else {
 
-    loop()
-    onoff = 1
+//     loop()
+//     onoff = 1
 
-  }  
-}
+//   }  
+// }
 
 // setInterval(function(){
   

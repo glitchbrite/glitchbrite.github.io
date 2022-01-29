@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  
+  <title>Stephen Alberts</title>
+  
+  <script src="../p5.js"></script>
+  <!-- <script src="../addons/p5.sound.js"></script> -->
+  <script src="nebula.js"></script>
+</head>
+
+<body>
+  <div id="tag">
+  <button id="menu" onclick="toggleText()">\ \ \</button>
+  <div id="hidden">
+    <h1>Nebula</h1>
+    <h3>STEPHEN ALBERTS</h3>
+    <p>A galactic scene based on the Color Blocks algorithm.</p>
+    <hr>
+    <h2>Projects</h2>
+    <a href="index.html" class="button"><button>Color Blocks</button></a>
+    <a href="nebula.html" class="button"><button>Nebula</button></a>
+    <a href="palette.html" class="button"><button>Palette</button></a>
+  </div>
+</div>
+  <main>
+    
+  </main>
+</body>
+<script>
+  function toggleText(){
+    let x = document.getElementById("hidden");
+    let menu = document.getElementById("menu");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+      menu.innerHTML = "\\ \\ \\";
+      menu.style.opacity = "1";
+    } else {
+      x.style.display = "none";
+      menu.innerHTML = "| | |";
+      menu.style.opacity = "0.7";
+    }
+  }
+  </script>
+</html>

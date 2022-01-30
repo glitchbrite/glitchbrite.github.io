@@ -43,6 +43,7 @@ canvas {
   border: 1px solid #ffffff;
   border-radius: 2px;
   background: transparent;
+  text-decoration: none;
   padding: 4px 8px;
 }
 #gen,#sclp {

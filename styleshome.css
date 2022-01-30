@@ -31,19 +31,9 @@ canvas {
 }
 #mainframe {
   display: block;
-}
-#navbar {
-  display: block;
-  margin-top: 21px;
-}
-#navbar button {
-  font-size: 14px;
-  font-weight: bold;
-  color: #ffffff;
-  border: 1px solid #ffffff;
-  border-radius: 2px;
-  background: transparent;
-  padding: 4px 8px;
+  max-width: 500px;
+  float: left;
+  margin-right: 42px;
 }
 #gen,#sclp {
   display: inline-block;
@@ -54,7 +44,7 @@ canvas {
   position: absolute;
   font-family: monospace;
   margin: 3% 4%;
-  max-width: 500px;
+  max-width: 800px;
 }
 #tag h1 {
   font-size: 42px;
@@ -81,7 +71,7 @@ canvas {
 .button {
   text-decoration: none;
 }
-#gen button, #sclp button {
+a button {
   display: block;
   border-style: none;
   font-weight: bold;

@@ -3,11 +3,10 @@ body {
   background: rgb(47, 47, 47);
 }
 #mainImg {
-  display: inline-block;
-  height: 100%;
-  width: 100%;
-  margin: 12px 0;
-  border: 1px solid #ffffff;
+  position: relative;
+  display: block;
+  float: left;
+  /* border-right: 84px solid black; */
 }
 canvas {
   margin: 0;
@@ -22,33 +21,12 @@ canvas {
   width: 42px;
   height: 42px;
   font-weight: bolder;
-  color: #ffffff;
-  border: 3px solid #ffffff;
+  color: rgb(47, 47, 47);
+  border: 3px solid rgb(47, 47, 47);
   border-radius: 42px;
   background: transparent;
   /* -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: rgba(0, 0, 0, 0.76); */
-}
-#mainframe {
-  display: block;
-}
-#navbar {
-  display: block;
-  margin-top: 21px;
-}
-#navbar button {
-  font-size: 14px;
-  font-weight: bold;
-  color: #ffffff;
-  border: 1px solid #ffffff;
-  border-radius: 2px;
-  background: transparent;
-  padding: 4px 8px;
-}
-#gen,#sclp {
-  display: inline-block;
-  float: left;
-  margin-right: 12px;
 }
 #tag {
   position: absolute;
@@ -62,26 +40,26 @@ canvas {
   margin: 0;
   padding: 0;
   text-align: left;
-  color: #ffffff;
+  color: rgb(47, 47, 47);
 }
 #tag h2 {
-  color: #ffffff;
+  color: rgb(47, 47, 47);
   margin-top: 21px;
 }
 #tag h3 {
   display: block;
   margin: 0;
   padding: 0;
-  color: #ffffff;
+  color: rgb(47, 47, 47);
 }
 #tag p {
   max-width: 500px;
-  color: #ffffff;
+  color: rgb(47, 47, 47);
 }
 .button {
   text-decoration: none;
 }
-#gen button, #sclp button {
+a button {
   display: block;
   border-style: none;
   font-weight: bold;
@@ -89,7 +67,7 @@ canvas {
   height: 24px;
   margin-bottom: 8px;
   border-radius: 42px;
-}
-#sclp button{
-  text-decoration: line-through;
+  color: #ddd;
+  background:  rgb(47, 47, 47);
+
 }

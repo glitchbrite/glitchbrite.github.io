@@ -1,7 +1,7 @@
 
 function setup() {
 
-  document.body.style.backgroundColor = "rgb(57, 57, 57)";
+  document.body.style.backgroundColor = "rgb(0, 0, 0)";
 
   createCanvas(windowWidth-(windowWidth*0.04), windowHeight-(windowHeight*0.02))
   background(0)

@@ -5,7 +5,7 @@ function windowResized() {
 }
 function setup() {
 
-  document.body.style.backgroundColor = "rgb(57, 57, 57)";
+  // document.body.style.backgroundColor = "rgb(57, 57, 57)";
 
   createCanvas(windowWidth-(windowWidth*0.04), windowHeight-(windowHeight*0.02), WEBGL)
 

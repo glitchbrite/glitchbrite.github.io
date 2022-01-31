@@ -1,7 +1,7 @@
 
 function setup() {
 
-  document.body.style.backgroundColor = "rgb(57, 57, 57)";
+  // document.body.style.backgroundColor = "rgb(57, 57, 57)";
 
   createCanvas(1000, 1000)
   background(0)

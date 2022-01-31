@@ -1,10 +1,10 @@
 function setup() {
 
-  // document.body.style.backgroundColor = "rgb(57, 57, 57)";
+  document.body.style.backgroundColor = "rgb(42, 42, 42)";
   // document.body.style.marginTop = "10px";
 
   createCanvas(1040, 1040, WEBGL)
-  background(57)
+  background(42)
   
  
 

@@ -5,6 +5,20 @@ body {
 p {
   font-size: 14px;
 }
+p a {
+  color: white;
+}
+#social button {
+  margin-left: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 2px;
+  background: transparent;
+  text-decoration: none;
+  padding: 4px 8px;
+}
 #mainImg {
   display: inline-block;
   height: 100%;
@@ -74,7 +88,7 @@ canvas {
 .button {
   text-decoration: none;
 }
-a button {
+#gen button {
   display: block;
   border-style: none;
   font-weight: bold;

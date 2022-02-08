@@ -73,6 +73,10 @@ canvas {
   color: #ffffff;
   cursor: default;
 }
+a {
+  text-decoration: none;
+  color: #ffffff;
+}
 h1 a {
   text-decoration: none;
   color: #ffffff;

@@ -4,6 +4,7 @@ body {
 }
 p {
   font-size: 14px;
+  cursor: default;
 }
 #mainImg {
   display: inline-block;
@@ -67,16 +68,19 @@ canvas {
   padding: 0;
   text-align: left;
   color: #ffffff;
+  cursor: default;
 }
 #tag h2 {
   color: #ffffff;
   margin-top: 21px;
+  cursor: default;
 }
 #tag h3 {
   display: block;
   margin: 0;
   padding: 0;
   color: #ffffff;
+  cursor: default;
 }
 #tag p {
   max-width: 500px;

@@ -94,9 +94,10 @@ function draw() {
   strokeWeight(8)
   translate(grid[grid.length-1].x,grid[grid.length-1].y)
   translate(r-(r*0.5),g-(g*0.5),b-(b*0.5))
-  sphere((r+g+b)/6)
+  sphere((r+g+b)/random(4,8))
   pop()
 
+  rotate(random(2))
   // push()
   // stroke("red")
   // strokeWeight(8)

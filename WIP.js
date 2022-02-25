@@ -24,6 +24,8 @@ var movex = 0
 var movey = 0
 var grid = []
 
+var newLength = 0
+
 var r = 127
 var g = 127
 var b = 127
@@ -53,31 +55,35 @@ setInterval(function(){
   }
 },100);
 
+var dis = 0
+
 function draw() {
   
-  movex = floor(random(-21,22))
-  movey = floor(random(-21,22))
+  movex = floor(random(-301,302))
+  movey = floor(random(-301,302))
   x = x + movex
   y = y + movey
 
   var v = createVector(x, y)
   grid.push(v)
+
   
   // fill(r,g,b,168)
   // noFill()
-  // stroke(r,g,b,floor(random(10)))
   // noStroke()
   
   push()
-  translate(p5.Vector.fromAngle(millis() / 1000, 200));
+  // translate(p5.Vector.fromAngle(millis() / 1000, 200));
 
   translate(grid[grid.length-1].x,grid[grid.length-1].y)
 
-  rotateX(frameCount * 0.01);
-  rotateY(frameCount * 0.01);
-  noStroke()
-  fill(r,g,b)
-  box(r/4,g/4,b/4)
+  // rotateX(frameCount * 0.01);
+  // rotateY(frameCount * 0.01);
+  // noStroke()
+  stroke(r,g,b,floor(random(10)))
+
+  fill(r,g,b, 168)
+  // box(r/4,g/4,b/4)
   
   pop()
 
@@ -88,55 +94,62 @@ function draw() {
   // stroke(r,g,b)
   // box(r,g,b)
 
+  dis = (r+g+b)/random(21,42)
+
   push()
   fill(r,g,b,86)
-  noStroke()
-  strokeWeight(8)
-  translate(grid[grid.length-1].x,grid[grid.length-1].y)
-  translate(r-(r*0.5),g-(g*0.5),b-(b*0.5))
-  sphere((r+g+b)/random(4,8))
-  pop()
-
-  rotate(random(2))
-  // push()
-  // stroke("red")
-  // strokeWeight(8)
-  // line(r-(r*0.5),-r+(r*0.5),g-(g*0.5),g-(g*0.5),b-(b*0.5),b-(b*0.5))
-  // pop()
-
-  // push()
-  // stroke(255)
-  // strokeWeight(8)
-  // line(r-(r*0.5),r-(r*0.5),g-(g*0.5),-g+(g*0.5),b-(b*0.5),b-(b*0.5))
-  // pop()
-
-  // push()
-  // stroke(255)
-  // strokeWeight(8)
-  
-  // line(r-(r*0.5),r-(r*0.5),g-(g*0.5),g-(g*0.5),b-(b*0.5),-b+(b*0.5))
-  
-  // pop()
-
-
-  push()
-  translate(grid[grid.length-1].x,grid[grid.length-1].y)
+  // noStroke()
+  stroke(r,g,b,random(255))
+  strokeWeight(random(0,0.5))
+  circle(grid[grid.length-1].x,grid[grid.length-1].y,dis)
 
   rotateX(frameCount * 0.008)
   rotateY(frameCount * 0.008)
-  stroke(r,g,b,floor(random(1)))
-  // noStroke()
-  fill(r,g,b,168)
-  strokeWeight(floor(random(0,4)))
+  translate(grid[grid.length-1].x,grid[grid.length-1].y)
+  // translate(r-(r*0.5),g-(g*0.5),b-(b*0.5))
+  sphere(dis)
 
-  beginShape()
-  vertex(-r+(r*0.5),g-(g*0.5),b-(b*0.5))
-  vertex(r-(r*0.5),-g+(g*0.5),b-(b*0.5))
-  vertex(r-(r*0.5),g-(g*0.5),-b+(b*0.5))
-  vertex(-r+(r*0.5),g-(g*0.5),b-(b*0.5))
-  endShape()
-  
   pop()
+
+  // push()
+  
+  // circle(grid[grid.length-1].x,grid[grid.length-1].y,(r+g+b)/random(8,16))
+  // pop()
+
+  // rotate(random(2))
+  // push()
+  // stroke(r,g,b,1)
+  // strokeWeight(1)
+  // beginShape()
+  // vertex(grid[grid.length-1].x,grid[grid.length-1].y,0)
+  // vertex(gesture[gesture.length-1].x,gesture[gesture.length-1].y,0)
+  
+  // endShape()
+  
+  // pop()
+
+  // newLength = floor(random(grid.length))
+  // console.log(newLength)
+
+  // push()
+  // translate(grid[grid.length-1].x,grid[grid.length-1].y)
+
+
+  // rotateX(frameCount * 0.008)
+  // rotateY(frameCount * 0.008)
+  // stroke(r,g,b,floor(random(1)))
+  // // noStroke()
+  // fill(r,g,b,242)
+  // strokeWeight(floor(random(0,4)))
+
+  // beginShape()
+  // vertex(-r+(r*0.5),g-(g*0.5),b-(b*0.5))
+  // vertex(r-(r*0.5),-g+(g*0.5),b-(b*0.5))
+  // vertex(r-(r*0.5),g-(g*0.5),-b+(b*0.5))
+  // vertex(-r+(r*0.5),g-(g*0.5),b-(b*0.5))
+  // endShape()
+  
+  // pop()
   
 
   if(x > ((width/2)-10)){

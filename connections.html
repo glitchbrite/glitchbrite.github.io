@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=0.4">
+  <link rel="stylesheet" href="styles.css">
+  <title>Stephen Alberts</title>
+  
+  <script src="../p5.js"></script>
+  <!-- <script src="../addons/p5.sound.js"></script> -->
+  <script src="connections.js"></script>
+</head>
+
+<body>
+  
+  <div id="tag">
+    <button id="menu" onclick="toggleText()">\ \ \</button>
+    <div id="hidden">
+      <h1>MARK SCHOENING</h1>
+      <h3>2022</h3>
+      <p></p>
+      <p></p>
+      <hr>
+      <div id="navbar">
+        <a href="index.html"><button id="home">Home</button></a>
+        <!-- <button id="contact">Contact</button> -->
+      </div>
+      <!-- <div id="gen">
+        <h2>Generative Work</h2>
+        <a href="colorblocks.html" class="button"><button onClick="window.location.reload();" >Color Blocks</button></a>
+        <a href="nebula.html" class="button"><button onClick="window.location.reload();">Nebula</button></a>
+        <a href="palette.html" class="button"><button onClick="window.location.reload();">Palette</button></a>
+        <a href="navigate.html" class="button"><button onClick="window.location.reload();">Navigate</button></a>
+        <a href="wanderingcircle.html" class="button"><button onClick="window.location.reload();">Wandering Circle</button></a>
+        <a href="machines.html" class="button"><button onClick="window.location.reload();">Machines</button></a>
+        <a href="wires.html" class="button"><button onClick="window.location.reload();">Wires</button></a>
+      </div> -->
+      <div id="sclp">
+        <h2>Sculptural Work</h2>
+        <a href="" class="button"><button onClick="window.location.reload();">Wood Paintings</button></a>
+        <a href="" class="button"><button onClick="window.location.reload();">String</button></a>
+      </div>
+    </div>
+  </div>
+  <main>
+    
+  </main>
+</body>
+<script>
+  function toggleText(){
+    let x = document.getElementById("hidden");
+    let menu = document.getElementById("menu");
+    if (x.style.display === "none") {
+      x.style.display = "block";
+      menu.innerHTML = "\\ \\ \\";
+      menu.style.opacity = "1";
+    } else {
+      x.style.display = "none";
+      menu.innerHTML = "| | |";
+      menu.style.opacity = "0.7";
+    }
+  }
+  </script>
+</html>

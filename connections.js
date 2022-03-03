@@ -166,11 +166,6 @@ function rotateAndPlaceImage(availableConnectionPoints) { // { top: true, left: 
   return image
 }
 
-function mouseClicked(){
-  window.location.reload(true) 
-}
-
-
 function draw() {
 
 }
